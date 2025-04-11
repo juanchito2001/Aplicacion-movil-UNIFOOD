@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Merienda", "Roboto", sans-serif, cursive;
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ),url(../ImagenPW/fondoReunion.jpg);
+  background-size: cover;
+}
+
+.container-form {
+  display: flex;
+  border-radius: 20px;
+  height: 500px;
+  max-width: 900px;
+  transition: all is ease;
+  margin: 10px;
+  transition: all 1s ease;
+  border: solid thin black;
+}
+
+.information {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #0e392f88;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.info-childs h2{
+  font-size: 2.3rem;
+}
+
+.info-childs p{
+  margin: 15px 0;
+}
+
+.info-childs input{
+  background-color: transparent;
+  outline: none;
+  border: solid 2px black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.info-childs input:hover{
+  background-color: #286749;
+}
+
+.form-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  background-color: #132027ba;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+  padding: 0 30px;
+}
+
+.form-information-childs h2{
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/*Para agregar mas adelante los Iconos*/
+/*----------------------*/
+.icons {
+  margin: 15px 0;
+  display: none;
+}
+.icons i{
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color .3s ease;
+  border: solid thin black;
+}
+.icons i:hover{
+  background-color: #132027;
+  color: #ffff;
+}
+/*----------------------*/
+
+.form {
+  margin: 30px 0 0 0;
+}
+
+.form label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color:#171a25;
+  border: solid thin black;
+}
+
+.form label i{
+  color: #ffffff;
+}
+
+.form label input{
+  width: 100%;
+  padding: 10px;
+  background-color: #171a25;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #ffffff;
+  transition: background-color .3s ease;
+}
+
+.form label input:focus {
+  background-color: #171a25; /* Mantiene el mismo color */
+  color: #ffffff; /* Mantiene el texto blanco */
+}
+
+.form input[type="submit"] {
+  background-color: #171a25;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: solid thin black;
+}
+
+.form input[type="submit"]:hover{
+  background-color: #286749;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:750px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  html {
+    font-size: 10px;
+  }
+
+  .container-form {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .information {
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-information {
+    width: 100%;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+  }
+
+  
+}
