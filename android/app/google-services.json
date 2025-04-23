@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "330389867692",
+    "project_id": "dbunicampus",
+    "storage_bucket": "dbunicampus.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330389867692:android:5105a26d7b9beee7c6a309",
+        "android_client_info": {
+          "package_name": "com.campus.pushUniFood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGJflZ_5EpFV8KyAzg5uefs9XIky_ndcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
